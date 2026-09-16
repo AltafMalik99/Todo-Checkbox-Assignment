@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Todo List</h1>
+
+        <% todos.forEach((todo) => { %>
+
+            <div class="todo">
+
+                <input
+                    type="checkbox"
+                    class="todo-checkbox"
+                    data-id="<%= todo.id %>"
+                    <%= todo.status ? "checked" : "" %>
+                >
+
+                <span class="todo-title">
+                    <%= todo.title %>
+                </span>
+
+                <span class="status">
+                    <%= todo.status ? "Completed" : "Pending" %>
+                </span>
+
+            </div>
+
+        <% }) %>
+
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.todo {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.todo-checkbox {
+    margin-right: 10px;
+}
